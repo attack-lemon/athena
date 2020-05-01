@@ -38,7 +38,7 @@
 `mget [keys]` 获取多个key的值  
 `incr [key]` 值递增  
 `incrby [key] [increment]` 值指定增量  
-`decr [key]` 值递减
+`decr [key]` 值递减  
 `decrby [key] [decrement]` 值指定减量  
 **hash操作**  
 `hdel [key] [fields]` 删除hash多个字段  

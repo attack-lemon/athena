@@ -1,7 +1,18 @@
 # athena
 ## redis cache storage framework
 
-#redis 原生的操作  
+# 使用方式  
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+在Application启动类上加上`@EnableCache`
+
+
+# redis 原生的操作  
 
 **key操作**  
 `del [key]`   删除key  

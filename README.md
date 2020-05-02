@@ -4,13 +4,20 @@
 # 使用方式  
 ```
 <dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter</artifactId>
+    <groupId>org.lemon.spring.boot.redis</groupId>
+    <artifactId>athena-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 在Application启动类上加上`@EnableCache`
 
+```
+@Resource
+private RedisTemplate<String, String> redisTemplate;
+
+redisTemplate.opsForValue().set(key, value);
+String value = redisTemplate.opsForValue().get(key);
+```
 
 # redis 原生的操作  
 
